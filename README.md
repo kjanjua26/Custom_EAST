@@ -28,10 +28,10 @@ Following dependencies are required to run this.
 1. To run this on GPU, you need to install and then add CUDA's path in `~/.bashrc` file in.
    Add these lines to  `.bashrc` file: 
    
-   `# add cuda tools to command path
+   `#add cuda tools to command path
     export PATH=/usr/local/cuda/bin:${PATH}
     export MANPATH=/usr/local/cuda/man:${MANPATH}
-    # add cuda libraries to library path
+    #add cuda libraries to library path
     if [[ "${LD_LIBRARY_PATH}" != "" ]]
     then
       export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH}
