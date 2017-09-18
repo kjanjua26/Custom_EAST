@@ -7,13 +7,12 @@ import tensorflow as tf
 
 import locality_aware_nms as nms_locality
 
-#tf.app.flags.DEFINE_string('gpu_list', '0', '')
 tf.app.flags.DEFINE_bool('no_write_images', False, 'do not write images')
 
 gpu_list = '0'
-checkpoint_path  = '/home/kamranjanjua/EAST/east_icdar2015_resnet_v1_50_rbox/'
-test_data_path = '/home/kamranjanjua/EAST/Ingredients Dataset/U.S Food/Set-1'
-output_dir = '/home/kamranjanjua/EAST/ing_output/americanfood/set1'
+checkpoint_path  = '/east_icdar2015_resnet_v1_50_rbox/'
+test_data_path = ''
+output_dir = ''
 
 import model
 from icdar import restore_rectangle
@@ -194,6 +193,8 @@ def main(argv=None):
                     cv2.imwrite(img_path, im[:, :, ::-1])
     img_amount = get_images()
     avg = avg / len(img_amount)
+    
     print('\nThe avg is:  {}'.format(avg))
+    
 if __name__ == '__main__':
     tf.app.run()
