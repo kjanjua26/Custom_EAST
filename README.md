@@ -39,7 +39,7 @@ Following dependencies are required to run this.
     `
 2. Specify the GPU in `eval.py` file.
 3. Type:
-        1. `source ~/.bashrc <br />`
-        2. `export CUDA_VISIBLE_DEVICES=GPU_Number <br />`
+        1. `source ~/.bashrc__`
+        2. `export CUDA_VISIBLE_DEVICES=GPU_Number__`
         3. `python3 eval.py |tee out`
         
