@@ -1,1 +1,1 @@
-This file contains the results from the detector. 
+This folder contains the results from the detector. 
