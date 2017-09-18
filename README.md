@@ -12,6 +12,7 @@ Following dependencies are required to run this.
 1. Install Anaconda package from https://docs.anaconda.com/anaconda/install/ for python3. 
 2. Create a conda environment `conda create -n tensorflow3 python=3.5`.
 3. Install tensorflow v1.3 `pip3 install tensorflow`.
+4. You also need resnet checkpoint to load from. Download it from here: http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz
 
 # Working
 
