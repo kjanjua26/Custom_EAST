@@ -28,7 +28,8 @@ Following dependencies are required to run this.
 1. To run this on GPU, you need to install and then add CUDA's path in `~/.bashrc` file in.
    Add these lines to  `.bashrc` file: 
    
-   `export PATH=/usr/local/cuda/bin:${PATH}
+   ```
+    export PATH=/usr/local/cuda/bin:${PATH}
     export MANPATH=/usr/local/cuda/man:${MANPATH}
     if [[ "${LD_LIBRARY_PATH}" != "" ]]
     then
@@ -36,7 +37,7 @@ Following dependencies are required to run this.
     else
       export LD_LIBRARY_PATH=/usr/local/cuda/lib64
     fi
-    `
+    ```
 2. Specify the GPU in `eval.py` file.
 3. Type:
 ```
